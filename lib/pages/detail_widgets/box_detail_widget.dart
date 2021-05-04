@@ -20,7 +20,7 @@ class BoxDetailWidget extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text("Milla Jovovich", style: TextStyle(color: Colors.white, fontWeight: FontWeight.w700, fontSize: 20),),
-              SizedBox(height: 20),
+              SizedBox(height: 10),
               Text("Milica Bogdanovna Milla Jovovich, é uma atriz, modelo, designer de moda e cantora norte-americana natural da Ucrânia, na época de seu nascimento ainda sob domínio da União Soviética.", style: TextStyle(color: Colors.white, height: 1.5),),
               Align(
                 alignment: Alignment.bottomRight,
