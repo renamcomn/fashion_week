@@ -30,9 +30,9 @@ class HomePage extends StatelessWidget {
                 ],
               ),
             ),
-            SizedBox(height: 40),
+            SizedBox(height: 20),
             MainTitle(),
-            SizedBox(height: 40),
+            SizedBox(height: 30),
             Column(
               children: [
 

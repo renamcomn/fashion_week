@@ -1,3 +1,4 @@
+import 'package:fashion_week/pages/detail_page.dart';
 import 'package:fashion_week/shared/colors.dart';
 import 'package:flutter/material.dart';
 
@@ -17,23 +18,28 @@ class ModelCard extends StatelessWidget {
         children: [
           AspectRatio(
             aspectRatio: 1/1.5,
-            child: Container(
-              margin: EdgeInsets.only(bottom: 20),
-              decoration: BoxDecoration(
-                boxShadow: [
-                  BoxShadow(
-                    color: primaryColor.withOpacity(0.4),
-                    offset: Offset(5,10),
-                    spreadRadius: 3,
-                    blurRadius: 20
-                  ),
-                ],
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(30),
-                image: DecorationImage(
-                  fit: BoxFit.cover,
-                  image: AssetImage(this.image)
-                )
+            child: GestureDetector(
+              onTap: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) => DetailPage()));
+              },
+                child: Container(
+                margin: EdgeInsets.only(bottom: 20),
+                decoration: BoxDecoration(
+                  boxShadow: [
+                    BoxShadow(
+                      color: primaryColor.withOpacity(0.4),
+                      offset: Offset(5,10),
+                      spreadRadius: 3,
+                      blurRadius: 20
+                    ),
+                  ],
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(30),
+                  image: DecorationImage(
+                    fit: BoxFit.cover,
+                    image: AssetImage(this.image)
+                  )
+                ),
               ),
             ),
           ),

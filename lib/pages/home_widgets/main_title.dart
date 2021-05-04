@@ -9,7 +9,7 @@ class MainTitle extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.start,
       children: [
 
-        Text("Fashion Week", style: TextStyle(color: primaryColor, fontSize: 30, fontWeight: FontWeight.w700)),
+        Text("Fashion Week", style: TextStyle(color: primaryColor, fontSize: 30, fontWeight: FontWeight.w700, fontFamily: 'Raleway')),
         Text("2021 Fashion show in Paris", style: TextStyle(color: secondaryColor, fontSize: 14))
 
       ],
